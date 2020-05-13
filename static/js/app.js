@@ -8,7 +8,7 @@ table.attr('class','table table-striped')
 var tbody = d3.select('tbody');
 
 function checkDate(date){
-    var dateRegexp = /^\d{1}\/\d{2}\/\d{4}$/;
+    var dateRegexp = /^\d{1,2}\/\d{2}\/\d{4}$/;
     return date.match(dateRegexp);
 }
 
